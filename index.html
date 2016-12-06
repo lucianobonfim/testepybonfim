@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ePalko</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+   
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Destaques</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#categorias">Categorias</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#usuario">Usuário</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#produtora">Produtora</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contato</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/admin/default.aspx" target="_blank">ENTRAR</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">&nbsp;</div>
+                <div class="intro-heading">&nbsp;</div>
+                <a href="#usuario" class="page-scroll btn btn-xl">Cadastre-se</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Destaques</h2>
+                    <h3 class="section-subheading text-muted">Peças em destaque</h3>
+                </div>
+            </div>
+            <div class="row">
+
+                <!--repetir N vezes ==> pegar samba-->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Round Icons</h4>
+                        <p class="text-muted">Graphic Design</p>
+                    </div>
+                </div>
+                <!-- -->    
+                            
+            </div>
+        </div>
+    </section>
+
+    <section id="usuario">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Cadastro de Usuário</h2>
+                    <h3 class="section-subheading text-muted">Informe seus dados abaixo.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="usuarioForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" maxlength="20" placeholder="Nome *" id="nameUsu" required data-validation-required-message="Favor preencher seu nome">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email *" id="emailUsu" required data-validation-required-message="Favor informar seu email">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="CEP *" id="cepUsu" required data-validation-required-message="Favor informar seu CEP">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="País *" id="cidadeUsu" required data-validation-required-message="Favor informar seu CEP">
+                                    <p class="help-block text-danger"></p>
+                                </div> 
+                                <div class="form-group">
+                                    <select class="form-control" name="ufUSU" placeholder="UF *">
+                                        <option value="estado">Selecione o Estado</option>
+                                        <option value="ac">Acre</option>
+                                        <option value="al">Alagoas</option>
+                                        <option value="am">Amazonas</option>
+                                        <option value="ap">Amapá</option>
+                                        <option value="ba">Bahia</option>
+                                        <option value="ce">Ceará</option>
+                                        <option value="df">Distrito Federal</option>
+                                        <option value="es">Espírito Santo</option>
+                                        <option value="go">Goiás</option>
+                                        <option value="ma">Maranhão</option>
+                                        <option value="mt">Mato Grosso</option>
+                                        <option value="ms">Mato Grosso do Sul</option>
+                                        <option value="mg">Minas Gerais</option>
+                                        <option value="pa">Pará</option>
+                                        <option value="pb">Paraíba</option>
+                                        <option value="pr">Paraná</option>
+                                        <option value="pe">Pernambuco</option>
+                                        <option value="pi">Piauí</option>
+                                        <option value="rj">Rio de Janeiro</option>
+                                        <option value="rn">Rio Grande do Norte</option>
+                                        <option value="ro">Rondônia</option>
+                                        <option value="rs">Rio Grande do Sul</option>
+                                        <option value="rr">Roraima</option>
+                                        <option value="sc">Santa Catarina</option>
+                                        <option value="se">Sergipe</option>
+                                        <option value="sp">São Paulo</option>
+                                        <option value="to">Tocantins</option> 
+                                    </select>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Cidade *" id="cidadeUsu" required data-validation-required-message="Favor informar seu CEP">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                                               
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Bairro *" id="bairroUsu" required data-validation-required-message="Favor informar seu CEP">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Endereço *" id="enderecoUsu" required data-validation-required-message="Favor informar seu CEP">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Numero *" id="numeroUsu" required data-validation-required-message="Favor informar seu CEP">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Complemento *" id="complementoUsu" required data-validation-required-message="Favor informar seu CEP">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Telefone" id="telUsu" required data-validation-required-message="Favor informar seu telefone">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" name="sexoUSU" placeholder="Sexo *">
+                                        <option>Masculino</option>
+                                        <option>Feminino</option>                                        
+                                    </select>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Cadastrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contato</h2>
+                    <h3 class="section-subheading text-muted">Entre em contato com a nossa equipe</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nome *" id="name" required data-validation-required-message="Favor preencher seu nome">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email *" id="email" required data-validation-required-message="Favor informar seu email">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" name="assunto" placeholder="Assunto *">
+                                        <option>Dúvida</option>
+                                        <option>Reclamação</option>
+                                        <option>Sugestão</option>
+                                        <option>Denuncie Pirataria</option>
+                                        <option>Outros</option>
+                                    </select>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Mensagem *" id="message" required data-validation-required-message="Preenchimento obrigatório"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Enviar Mensagem</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; epalko 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://twitter.com/epalkoBrasil" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/epalkobrasil" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/epalkobrasil" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://vimeo.com/epalkobrasil" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#faqusuario" class="portfolio-link" data-toggle="modal">FAQ</a></li>
+                        <li><a href="#termosdeuso" class="portfolio-link" data-toggle="modal">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- termos de uso -->
+    <div class="portfolio-modal modal fade" id="termosdeuso" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">                            
+                            <center><h2>Termos de Uso Geral</h2></center>
+                            <p>
+                                Este instrumento, daqui em diante chamado “TERMOS DE USO”, serve ao mesmo tempo como:
+                                a)	Contrato de licenciamento de uso entre a epalko.com, com sede na cidade do Rio de Janeiro, e inscrita no CNPJ sob o Nº 26.172.530/0001-00, e o usuário devidamente cadastrado, que decida utilizar o serviço desenvolvido pela EPALKO TECNOLOGIA LTDA.
+                                b)	Termos de uso para a correta utilização do serviço oferecido através do site www.epalko.com nas condições que seguem;
+                                c)	Política de privacidade, armazenamento e segurança de dados.
+                                Pelos TERMOS DE USO são estabelecidas as condições gerais pelas quais o usuário utilizará o serviço através do site www.epalko.com.
+                                Os TERMOS DE USO são o consenso integral e plenamente vinculante entre a epalko e o USUÁRIO, sendo este o único documento hábil a reger sua relação contratual, substituindo todos e quaisquer acordos e entendimentos, verbais ou escritos, mantidos anteriormente. A aceitação dos TERMOS DE USO é obrigatória para a utilização dos serviços prestados pela epalko.com e a mera utilização do site implica a imediata concordância com todas as suas cláusulas, políticas e princípios, ficando vinculado somente ao USUÁRIO que irá assistir aos vídeos após alugar o conteúdo.
+                                Os TERMOS DE USO são mostrados ao USUÁRIO e por ele necessariamente aceitos quando do inicio do processo de cadastro e utilização, sendo certo que dada a sua publicidade, não permite que o USUÁRIO alegue desconhecimento das regras e obrigações criadas por meio deles.
+                            </p>
+                            <p>
+                                TODA E QUALQUER PESSOA QUE SE TORNAR USUÁRIA DO SERVIÇO DECLARA ACEITAR ESTES TERMOS DE USO.
+                            </p>
+                            <p>
+                                I.	DEFINIÇÕES GERAIS:
+                                a)	A EPALKO TECNOLOGIA LTDA é proprietária do site www.epalko.com. A epalko presta serviço de vídeos disponibilizados por produtoras independentes. Os vídeos são disponibilizados somente para aluguel, mediante pagamento do respectivo valor definido pelas produtoras;
+                                b)	USUÁRIO: É o consumidor final, locatário, que através de prévio cadastro, deverá efetuar login com nome de usuário e senha para alugar qualquer conteúdo do site, sendo certo que a veracidade das informações fornecidas são de responsabilidade somente do USUÁRIO;
+                                c)	O sigilo do nome de usuário e senha cabe tão somente ao USUÁRIO, sendo elas pessoais e intransferíveis.
+                            </p>
+                            <p>
+                                II.	DA LICENÇA DO SISTEMA – SITE – www.epalko.com
+                                Estes TERMOS DE USO criam exclusivamente, entre epalko e o USUÁRIO, uma relação contratual de licenciamento de uso mediante pagamento, em que a epalko é proprietária do site www.epalko.com e o USUÁRIO, consumidor final.
+                                a)	A licença de uso do sistema feita pela epalko ao USUÁRIO é onerosa, havendo ônus somente quando o USUÁRIO alugar o conteúdo. Não há mensalidade ou taxas. O USUÁRIO pagará somente apenas pelo conteúdo alugado na data do eventual aluguel do vídeo;
+                                b)	Por meio da licença, o USUÁRIO tem acesso à ampla base de vídeos de produtoras credenciadas. O USUÁRIO poderá ver apenas um comercial do conteúdo. O vídeo completo somente poderá ser assistido após confirmação de pagamento do aluguel;
+                                c)	O USUÁRIO está ciente de que não poderá copiar ou divulgar, total ou parcialmente o conteúdo alugado, sob as penas previstas na legislação penal e civil;
+                                d)	A liberação da licença de utilização se dará após a confirmação do pagamento pela financeira e esta operação apenas através de cartão de crédito. Após a confirmação da transação e liberação pela financeira, o vídeo ficará disponível para ser assistido na sua área de usuário;
+                                e)	O USUÁRIO terá 24 horas para assistir ao conteúdo alugado. Caso o vídeo não seja visualizado dentro deste período, o mesmo ficará disponível para visualização em uma única oportunidade.
+                            </p>
+                            <p>
+                                III.	DO CADASTRO DO USUÁRIO
+                                a)	Para utilizar o serviço de aluguel de vídeos e se conectar com o sistema, o USUÁRIO deverá efetuar o cadastro junto ao site, apresentando à epalko as seguintes informações:
+                                1.	Nome completo;
+                                2.	Endereço completo (CEP, bairro, cidade, estado e país);
+                                3.	E-mail válido;
+                                4.	Definição de senha de USUÁRIO;
+                                5.	Quaisquer documentos adicionais que a epalko achar necessário para realizar o cadastro.
+                                b)	O USUÁRIO assume inteira responsabilidade pela veracidade e regularidade das informações e dados fornecidos, sob as penas da lei.
+                            </p>
+                            <p>
+                                IV.	DA PROPRIEDADE INTELECTUAL DA EPALKO TECNOLOGIA LTDA SOBRE O SISTEMA www.epalko.com.
+
+                                a)	Observado o que dispõe nas Leis nº 9.279/96, 9.609/98 e 9.610/98, e sem prejuízo das demais normas relativas à proteção da propriedade intelectual, o USUÁRIO reconhece que o sistema, bem como todo o conteúdo disponível na plataforma do epalko, incluindo as marcas, logotipos, textos, gráficos, fotografias, vídeos, conteúdos de áudio, telas, banco de dados e arquivos de transmissão são de propriedade exclusiva do epalko ou dos pertinentes terceiros licenciantes, conforme o caso. É proibida, sob as penas da lei e com engajamento da responsabilidade civil contratual e extracontratual do USUÁRIO infrator, a sua cópia, reprodução, distribuição, transmissão, publicação, conexão ou qualquer outro tipo de modificação.
+
+                                A utilização não autorizada de qualquer material poderá sujeita-lo à responsabilidade civil, processo penal, ou ambos, nos termos da legislação federal, estadual e local aplicável. Exigimos que o USUÁRIO respeite os direitos autorais, do epalko, marcas registradas e outros direitos da propriedade intelectual.
+                            </p>
+                            <p>
+                                V.	DA POLÍTICA DE PRIVACIDADE, DO ARMAZENAMENTO E DA SEGURANÇA DE DADOS PESSOAIS.
+                                a)	Todo e qualquer dado pessoal do USUÁRIO, obtido pelo epalko quando do cadastro do mesmo, serão armazenados em servidores ou meios magnéticos seguros da própria empresa ou de terceiros escolhidos pelo critério da qualidade e da idoneidade;
+                                b)	Para efeito destes TERMOS DE USO, são considerados “dados pessoais” todos os dados não públicos relativos à identidade e à vida privada do titular;
+                                c)	Por “servidores ou meios magnéticos seguros” entende-se todo meio eficaz para armazenamento de dados que esteja de acordo com os padrões e especificações de segurança definidos pela EPALKO TECNOLOGIA LTDA;
+                                d)	O epalko envidará os melhores esforços, dentro dos limites da proporcionalidade, para manter a confidencialidade e a segurança dos dados pessoais do USUÁRIO sob sua guarda;
+                                e)	O epalko não será responsabilizado, contudo, por danos ou prejuízos sofridos pelo USUÁRIO por caso fortuito ou de força maior, nem por decorrência da violação das medidas de segurança implementadas por parte de terceiros que utilizem, irregular ou delituosamente, as redes publicas, a internet ou quaisquer outros meios tecnológicos para violar sistemas e acessar ilegalmente os referidos dados;
+                                f)	O USUÁRIO aceita que seus dados pessoais, ainda que sejam individualizáveis e permitam sua identificação, poderão ser acessados por funcionários da própria epalko, para a geração de relatórios variados, para a correção de erros operacionais e para a analise de possíveis casos de fraude;
+                                g)	O USUÁRIO aceita que a epalko utiliza tecnologias comuns de internet para acompanhar as interações do USUÁRIO com o sistema, inclusive com a coleta e armazenamento de IP, página solicitada, tempo de duração do acesso, tipo de aparelho ou terminal, navegador, operadora de telefonia celular, provedor de acesso a internet, localização física, etc;
+                                h)	O USUÁRIO aceita que seus dados pessoais podem ser coletados e armazenados por quaisquer formas legítimas de interação com o site;
+                                i)	O USUÁRIO reconhece e aceita que o epalko informará às autoridades públicas competentes os dados pessoais cuja entrega seja obrigada, nos termos da lei.
+                            </p>
+                            <p>
+                                VI.	DISPOSIÇÕES FINAIS
+                                Estes TERMOS DE USO, que se regem pelas leis da Republica Federativa do Brasil, vigorarão por prazo indeterminado, enquanto o USUÁRIO continuar a utilizar o sistema, podendo ser atualizado periodicamente pelo epalko para refletir as novas características de uso e regras do serviço prestado ao USUÁRIO, bem como as evoluções na política de privacidade e segurança de dados.
+                            </p>
+                            <p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Concordo</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- faq usuario -->
+    <div class="portfolio-modal modal fade" id="faqusuario" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <center><h2>FAQ Perguntas Frequentes</h2></center>
+                            <p>
+                                <b>O que é o epalko?</b><br />
+                                O epalko é uma plataforma digital de aluguel de peças de Teatro.Aqui você poderá assistir as suas peças favoritas sem sair de casa. 
+                            </p>
+                            <p>
+                                <b>O epalko tem custo mensal? É assinatura?</b><br /> 
+                                Não. O epalko é um serviço on demand, ou seja, você só irá pagar pelo espetáculo que alugar. 
+                            </p>
+                            <p>
+                                <b>Posso assistir no celular?</b><br />
+                                Sim.   
+                            </p>
+                            <p>
+                                <b>Posso assistir no computador ou no tablet?</b><br /> 
+                                Sim. 
+                            </p>
+                            <p>
+                                <b>Posso assistir na TV?</b><br />  
+                                Sim. Se a sua TV tiver acesso à internet, ou tecnologia de espelhamento de outros aparelhos, sim, você poderá assistir na sua TV.
+                            </p>
+                            <p>
+                                <b>Gostei da peça, como faço para alugar?</b><br /> 
+                                Após selecionar a peça que deseja alugar, você deverá realizar seu cadastro, definindo login e senha de acesso ao epalko. Caso já tenha cadastro conosco, basta entrar com seu login e senha e clicar no botão alugar.Depois de clicar em alugar você fará a opção de pagamento. Você receberá em seu email a confirmação de pagamento com as instruções para acesso ao conteúdo alugado, que também ficará disponível na sua área de usuário no epalko. 
+                            </p>
+                            <p>
+                                <b>O epalko é seguro?</b><br />  
+                                Sim. Trabalhamos com as maiores e mais seguras plataformas de operações com cartões de crédito, Cielo e Paypall.
+                            </p>
+                            <p>
+                                <b>Só posso pagar com crédito?</b><br />  
+                                Sim. Esta é a forma mais rápida de disponibilizarmos o conteúdo para você.
+                            </p>
+                            <p>
+                                <b>Consigo baixar ou salvar o vídeo?</b><br />
+                                Não. As peças alugadas ficarão disponíveis na sua área de usuário, no epalko, por 24 horas após a confirmação do pagamento pela financeira. Durante esse período você poderá assistir quantas vezes quiser. Mas somente através do site do epalko.
+                            </p>
+                            <p>
+                                <b>Eu aluguei uma peça mas não consegui assistir dentro das 24 horas. Não poderei mais assistir?</b><br />
+                                Caso durante essas 24 horas você não tenha assistido o espetáculo que alugou, o sistema permitirá que você assista pelo menos uma vez após esse período.
+                            </p>
+                            <p>
+                                <b>Como acessar os meus conteúdos alugados no epalko?</b><br />
+                                Ao realizar seu cadastro no epalko, você terá uma área exclusiva de conteúdo.Acessando com seu login e senha você poderá visualizar as peças alugadas e que ainda estão disponíveis para você assistir.
+                            </p>
+                            
+                            <p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Fechar</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+    <!-- InputMask -->
+    <script src='admin/plugins/input-mask/jquery.inputmask.js'></script>
+    <!--<script src='admin/plugins/input-mask/jquery.inputmask.date.extensions.js'></script>
+    <script src='admin/plugins/input-mask/jquery.inputmask.extensions.js'></script>-->
+
+    <!-- Page script -->
+    <script>
+    $(function () {        
+        $('#telUsu,#telPro').inputmask('(99) 99999-9999');
+        $('#cepUsu,#cepPro').inputmask('99999-999');
+        
+        
+    });
+    </script>
+
+</body>
+</html>
